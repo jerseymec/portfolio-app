@@ -67,6 +67,6 @@ jobs:
         with:
           #UPDATE CUSTOM VALUE PATH
           values_files: app/custom_values.yaml
-          tag_value: ${{ github.sha }}
+          tag_value: sha-${{ github.sha }}
           commit_branch: 'main'
           helm_docs: false
