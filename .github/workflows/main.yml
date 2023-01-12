@@ -60,7 +60,7 @@ jobs:
           
           repository: ${{ env.HELM3_REPO }}
           ref: 'main'
-          # token: ${{ secrets.GH_PAT }}
+          token: ${{ secrets.GH_PAT }}
           
       - name: Update Helm Chart Values
         uses: Nextdoor/helm-set-image-tag-action@6aec6e62a1629ac5a3179b5b46ae0a55ce18e5a6
